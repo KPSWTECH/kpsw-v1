@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "kpsw-tech",
+    "kpsw-v1": "kpsw-tech"
+  },
+  "targets": {},
+  "etags": {}
+}

@@ -25,9 +25,9 @@ export const PublicNavbar = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <Link 
-                key={link.name} 
-                to={link.path} 
+              <Link
+                key={link.name}
+                to={link.path}
                 className="text-sm font-medium text-heritage-600 hover:text-accent transition-colors"
               >
                 {link.name}
@@ -35,8 +35,8 @@ export const PublicNavbar = () => {
             ))}
             <div className="flex items-center gap-4 ml-4">
               <Link to="/login" className="text-sm font-medium text-heritage-600 hover:text-accent">Login</Link>
-              <Link 
-                to="/login" 
+              <Link
+                to="/login"
                 className="bg-accent text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-accent/90 transition-all shadow-lg shadow-accent/20"
               >
                 Create Vault
@@ -55,9 +55,9 @@ export const PublicNavbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white border-b border-heritage-100 p-4 space-y-4">
           {navLinks.map((link) => (
-            <Link 
-              key={link.name} 
-              to={link.path} 
+            <Link
+              key={link.name}
+              to={link.path}
               className="block text-base font-medium text-heritage-600"
               onClick={() => setIsOpen(false)}
             >
@@ -66,8 +66,8 @@ export const PublicNavbar = () => {
           ))}
           <div className="pt-4 border-t border-heritage-100 flex flex-col gap-4">
             <Link to="/login" className="text-base font-medium text-heritage-600" onClick={() => setIsOpen(false)}>Login</Link>
-            <Link 
-              to="/login" 
+            <Link
+              to="/login"
               className="bg-accent text-white px-5 py-3 rounded-xl text-center font-medium"
               onClick={() => setIsOpen(false)}
             >
